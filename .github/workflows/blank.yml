@@ -1,0 +1,13 @@
+name: test suite
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: buff3r0verfl0w/rust-toolchain@7790cc4cfb40b4edb363a2433f7d3b8a6cbeafce
